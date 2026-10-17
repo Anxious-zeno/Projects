@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Desk Clock</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+    <div class="bg-circle bg1"></div>
+    <div class="bg-circle bg2"></div>
+    <div class="bg-circle bg3"></div>
+
+    <div class="controls">
+        <button type="button" class="theme-toggle" id="themeToggle" aria-label="Switch mode">
+            <i class="fa-solid fa-sun" aria-hidden="true"></i>
+        </button>
+        <button id="mode-btn" class="main-btn">SWITCH TO DIGITAL</button>
+    </div>
+
+    <div class="clock-wrapper">
+        <div class="clock analog active" id="analog-clock">
+            <div class="numbers">
+                <span class="twelve">12</span>
+                <span class="three">3</span>
+                <span class="six">6</span>
+                <span class="nine">9</span>
+            </div>
+            <div class="arrows">
+                <div class="hour"></div>
+                <div class="minute"></div>
+                <div class="second"></div>
+            </div>
+        </div>
+
+        <div class="clock digital" id="digital-clock">
+            <div class="desk-legs">
+                <div class="leg"></div>
+                <div class="leg"></div>
+                <div class="base-plate"></div>
+            </div>
+
+            <div class="clock-screen">
+                <div class="note-wrapper" id="hour-wrapper">
+                    <div class="sticky-note" id="hour-note">
+                        <span class="note-text" id="hour-val">--</span>
+                    </div>
+                </div>
+                <div class="colon">:</div>
+                <div class="note-wrapper" id="minute-wrapper">
+                    <div class="sticky-note" id="minute-note">
+                        <span class="note-text" id="minute-val">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
